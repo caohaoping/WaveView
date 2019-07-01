@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <com.example.view.Wave
+        android:id="@+id/wave"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="动" />
+
+    <com.example.view.WaveQuad
+        android:id="@+id/waverquad"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="@+id/wave"
+        app:layout_constraintTop_toBottomOf="@+id/wave" />
+
+    <com.example.view.WaveXfermode
+        android:id="@+id/wavexfermode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="@+id/waverquad"
+        app:layout_constraintTop_toBottomOf="@+id/waverquad"
+        app:text="画" />
+
+    <com.example.view.WaveRquad
+        android:id="@+id/wavequad"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="@+id/wavexfermode"
+        app:layout_constraintTop_toBottomOf="@+id/wavexfermode" />
+</android.support.constraint.ConstraintLayout>
